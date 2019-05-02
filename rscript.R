@@ -34,7 +34,9 @@ ggplot(data ="practical-data-2019.csv")+
 47.88644/12.52996
 #calculating standard error Wilkin
 45.40464/5.477226
- #attempting to get some grpahs up
+
+
+#attempting to get some grpahs up
 summary(mosq_count)
 ggplot(data = practical_data_2019) +
   geom_bar(mapping = aes(x = mosq_count))
@@ -43,3 +45,8 @@ ggplot(data = practical_data_2019) +
 # proper scatter for mosq count and temp
 ggplot(data = practical_data_2019) +
   geom_point(mapping = aes(x = mosq_count, y = temp))
+
+#histogram
+ggplot(data = practical_data_2019) +
+  geom_histogram(mapping = aes(x = mosq_count))
+
